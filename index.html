@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="logo.png">
+    <link rel="icon" href="assets/image/logo.png">
     <title>Pujayana</title>
     <style>
         html, body {
@@ -18,6 +18,10 @@
             -z-animation: rainbow 18s ease infinite;
             -o-animation: rainbow 18s ease infinite;
             animation: rainbow 18s ease infinite;
+        }
+        @font-face{
+            font-family: luckies-guy;
+            src: url(assets/font/luckies-guy.ttf);
         }
         @-webkit-keyframes rainbow {
             0%{background-position:0% 82%}
@@ -56,7 +60,7 @@
         }
         .bubbles h1 {
             position: relative;
-            font-family: 'Luckiest Guy', cursive;
+            font-family: luckies-guy;
             font-size: 35px;
             color: #fff;
             z-index: 2;
@@ -86,7 +90,7 @@
     </div>
 </div>
 
-<script type="text/javascript" src="jquery-3.5.0.min.js"></script>
+<script type="text/javascript" src="assets/jquery/jquery-3.5.0.min.js"></script>
 <script>
     $(document).ready(function(){
         var data = -100;
